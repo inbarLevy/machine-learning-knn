@@ -6,8 +6,8 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 import json
 
-apps = pd.read_csv('../DataFiles/apps.csv')
-user_reviews = pd.read_csv('../DataFiles/user_reviews.csv')
+apps = pd.read_csv('./DataFiles/apps.csv')
+user_reviews = pd.read_csv('./DataFiles/user_reviews.csv')
 
 # load and create dataset
 apps_copy = apps[["App", "Category", "Rating", "Size", "Type", "Price", "Genres"]].copy()
